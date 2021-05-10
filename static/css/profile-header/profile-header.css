@@ -1,0 +1,7 @@
+.profile-header {
+  height: 170px;
+}
+
+.profile-header--horizontal > * {
+  display: inline-block;
+}
