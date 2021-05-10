@@ -1,0 +1,11 @@
+.tab-nav__link {
+  margin: 0 24px;
+}
+
+.tab-nav__link:first-of-type {
+  margin-left: 0;
+}
+
+.tab-nav__link:last-of-type {
+  margin-right: 0;
+}

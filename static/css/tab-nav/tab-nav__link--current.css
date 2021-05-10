@@ -1,0 +1,4 @@
+.tab-nav__link--light-bg.tab-nav__link--current {
+  text-decoration: underline;
+  opacity: 1;
+}
