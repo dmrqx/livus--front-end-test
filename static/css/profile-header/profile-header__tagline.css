@@ -1,3 +1,7 @@
+.profile-hero .profile-header__tagline {
+  color: #F6F6F4;
+}
+
 .profile-header__tagline {
   margin: 0 0 32px;
   font-size: 16px;

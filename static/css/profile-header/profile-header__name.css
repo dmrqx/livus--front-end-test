@@ -1,3 +1,7 @@
+.profile-hero .profile-header__name {
+  color: #FFFDFB;
+}
+
 .profile-header__name {
   margin: 0 0 8px;
   font-weight: 500;
