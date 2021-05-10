@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lsaquo;nav&rsaquo;</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/nav/nav.css">
+  <link rel="stylesheet" href="static/css/nav/nav--dark-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav--light-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav--horizontal.css">
+  <link rel="stylesheet" href="static/css/nav/nav__category.css">
+  <link rel="stylesheet" href="static/css/nav/nav__category-title.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link--dark-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link--light-bg.css">
+  
+  <style>
+    nav > ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 96px;
+    }
+
+    header .nav--horizontal {
+      align-items: center;
+    }
+
+    header .nav__link {
+      margin: 0 24px;
+    }
+
+    header .livus-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    footer {
+      padding: 64px 0;
+    }
+
+    footer .nav__category {
+      margin: 0 12px;
+    }
+
+    .dark-bg {
+      background-color: #1A1A1A;
+    }
+
+    .light-bg {
+      background-color: #F6F6F4;
+    }
+
+    .container {
+      max-width: 1140px;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .nav__category {
+      min-width: 170px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container dark-bg">
+    <div class="livus-logo">
+      <img src="static/brand/logo--dark-bg.svg" alt="logotype" aria-hidden="true" role="presentation" />
+    </div>
+    <nav class="nav nav--horizontal nav--dark-bg">
+      <ul class="nav--horizontal">
+        <li class="nav__link">
+          <a href="#" class="nav__link--dark-bg">Link</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--dark-bg">Link two</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--dark-bg">Link three</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--dark-bg">Link four</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer class="container light-bg">
+    <div>
+      <img src="static/brand/logo--light-bg.svg" alt="logotype" aria-hidden="true" role="presentation" />
+    </div>
+    <nav class="nav nav--horizontal nav--light-bg">
+      <ul class="nav__category">
+        <li class="nav__category-title">
+          Category
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--light-bg">Link</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--light-bg">Longer link</a>
+        </li>
+      </ul>
+      <ul class="nav__category">
+        <li class="nav__category-title">
+          Category
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--light-bg">Link</a>
+        </li>
+      </ul>
+      <ul class="nav__category">
+        <li class="nav__category-title">
+          Category
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--light-bg">Three word Link</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

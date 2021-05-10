@@ -1,0 +1,15 @@
+.nav__link {
+  margin-bottom: 12px;
+}
+
+.nav--horizontal .nav__link:first-of-type {
+  margin-left: 0;
+}
+
+.nav--horizontal .nav__link:last-of-type {
+  margin-right: 0;
+}
+
+.nav__category .nav__link:last-of-type {
+  margin-bottom: 0;
+}

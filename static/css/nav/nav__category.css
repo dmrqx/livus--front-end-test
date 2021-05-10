@@ -1,0 +1,7 @@
+.nav__category:first-of-type {
+  margin-left: 0;
+}
+
+.nav__category:last-of-type {
+  margin-right: 0;
+}
