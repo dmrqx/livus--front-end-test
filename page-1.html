@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/nav/nav.css">
+  <link rel="stylesheet" href="static/css/nav/nav--dark-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav--light-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav--horizontal.css">
+  <link rel="stylesheet" href="static/css/nav/nav__category.css">
+  <link rel="stylesheet" href="static/css/nav/nav__category-title.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link--dark-bg.css">
+  <link rel="stylesheet" href="static/css/nav/nav__link--light-bg.css">
+
+  <link rel="stylesheet" href="static/css/profile-hero/profile-hero.css">
+
+  <link rel="stylesheet" href="static/css/profile-header/profile-header.css">
+  <link rel="stylesheet" href="static/css/profile-header/profile-header__avatar-container.css">
+  <link rel="stylesheet" href="static/css/profile-header/profile-header__avatar.css">
+  <link rel="stylesheet" href="static/css/profile-header/profile-header__info.css">
+  <link rel="stylesheet" href="static/css/profile-header/profile-header__name.css">
+  <link rel="stylesheet" href="static/css/profile-header/profile-header__tagline.css">
+
+  <link rel="stylesheet" href="static/css/tab-nav/tab-nav.css">
+  <link rel="stylesheet" href="static/css/tab-nav/tab-nav--light-bg.css">
+  <link rel="stylesheet" href="static/css/tab-nav/tab-nav__link.css">
+  <link rel="stylesheet" href="static/css/tab-nav/tab-nav__link--current.css">
+  <link rel="stylesheet" href="static/css/tab-nav/tab-nav__link--light-bg.css">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #FFFDFB;
+    }
+
+    nav > ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      height: 96px;
+    }
+
+    header .nav--horizontal {
+      align-items: center;
+    }
+
+    header .nav__link {
+      margin: 0 24px;
+    }
+
+    header .livus-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-tab-nav {
+      padding: 34.5px 0;
+      border-bottom: 1px solid #000000;
+    }
+
+    .profile-tab-nav nav > ul {
+      margin: 0;
+    }
+
+    footer {
+      padding: 64px 0;
+    }
+
+    footer .nav__category {
+      margin: 0 12px;
+    }
+
+    .dark-bg {
+      background-color: #1A1A1A;
+    }
+
+    .light-bg {
+      background-color: #F6F6F4;
+    }
+
+    .container {
+      max-width: 1140px;
+    }
+
+    .container--center {
+      margin: 0 auto;
+    }
+
+    .container--full-height {
+      height: 100%;
+    }
+
+    .page-content {
+      padding: 56px 0;
+    }
+
+    footer .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .nav__category {
+      min-width: 170px;
+    }
+  </style>
+
+  <style>
+    .sr-only {
+      position:absolute;
+      left:-10000px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+
+    .tabular-view--collapse-borders {
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+      font-family: Montserrat;
+    }
+
+    thead {
+      font-weight: 500;
+    }
+
+    tbody {
+      font-weight: 400;
+    }
+
+    tr {
+      border-bottom: 1px solid #AFAFAF;
+    }
+
+    tr th:first-of-type,
+    tr td:first-of-type {
+      padding-left: 0;
+    }
+
+    tr th:last-of-type,
+    tr td:last-of-type {
+      padding-right: 0;
+      text-align: right;
+    }
+
+    th,
+    td {
+      width: 44%;
+      padding: 24px 5px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+    }
+  </style>
+
+  <style>
+    .pagination {
+      display: flex;
+    }
+
+    .pagination--centered {
+      justify-content: center;
+    }
+
+    .pagination__pages {
+      display: flex;
+      font-family: Montserrat;
+    }
+
+    .page-number {
+      display: block;
+      margin: 0 5px;
+      width: 32px;
+      height: 32px;
+      border: 0.64px solid #1A1A1A;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+
+    .page-number:first-of-type {
+      margin-left: 0;
+    }
+
+    .page-number:last-of-type {
+      margin-right: 0;
+    }
+
+    .page-link {
+      display: block;
+      color: #1A1A1A;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .page-link--current {
+      background-color: #1A1A1A;
+      color: #F6F6F4;
+    }
+  </style>
+</head>
+<body>
+  <header class="dark-bg">
+    <div class="container container--center">
+      <div class="livus-logo">
+        <img src="static/brand/logo--dark-bg.svg" alt="logotype" aria-hidden="true" role="presentation" />
+      </div>
+      <nav class="nav nav--horizontal nav--dark-bg">
+        <ul class="nav--horizontal">
+          <li class="nav__link">
+            <a href="#" class="nav__link--dark-bg">Link</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--dark-bg">Link two</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--dark-bg">Link three</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--dark-bg">Link four</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="profile-hero">
+    <div class="container container--center container--full-height">
+      <div class="profile-header profile-header--horizontal">
+        <div class="profile-header__avatar-container">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="" class="profile-header__avatar profile-header__avatar--rounded" />
+        </div>
+    
+        <div class="profile-header__info">
+          <h1 class="profile-header__name">Profile name</h1>
+          <p class="profile-header__tagline">Profile tagline / description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-tab-nav">
+    <div class="container container--center">
+      <nav class="tab-nav tab-nav--light-bg nav--horizontal">
+        <ul class="nav--horizontal">
+          <li class="tab-nav__link">
+            <a href="#" class="tab-nav__link--light-bg">Link</a>
+          </li>
+          <li class="tab-nav__link">
+            <a href="#" class="tab-nav__link--light-bg tab-nav__link--current">Link two</a>
+          </li>
+          <li class="tab-nav__link">
+            <a href="#" class="tab-nav__link--light-bg">Link three</a>
+          </li>
+          <li class="tab-nav__link">
+            <a href="#" class="tab-nav__link--light-bg">Link four</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="page-content">
+    <div class="container container--center">
+      <table aria-describedby="table-id" class="tabular-view--collapse-borders">
+        <caption id="table-id" class="sr-only">Tabular view content description</caption>
+          <col>
+          <col>
+          <col>
+
+          <thead>
+            <tr>
+              <th id="first">First column</th>
+              <th id="second">Second column</th>
+              <th id="third">Third column</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="first">Some content</td>
+              <td headers="second">01/01/1970</td>
+              <td headers="third">A</td>
+          </tr>
+          <tr>
+            <td headers="first">Some more content</td>
+            <td headers="second">22/11/1970</td>
+            <td headers="third">A</td>
+          </tr>
+          <tr>
+            <td headers="first">Another content</td>
+            <td headers="second">31/08/1970</td>
+            <td headers="third">F</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav class="pagination pagination--centered">
+        <ul class="pagination__pages nav--horizontal">
+          <li class="page-number">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-number">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-number">
+            <a href="#" class="page-link page-link--current">3</a>
+          </li>
+          <li class="page-number">
+            <a href="#" class="page-link">4</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="light-bg">
+    <div class="container container--center">
+      <div>
+        <img src="static/brand/logo--light-bg.svg" alt="logotype" aria-hidden="true" role="presentation" />
+      </div>
+      <nav class="nav nav--horizontal nav--light-bg">
+        <ul class="nav__category">
+          <li class="nav__category-title">
+            Category
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--light-bg">Link</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--light-bg">Longer link</a>
+          </li>
+        </ul>
+        <ul class="nav__category">
+          <li class="nav__category-title">
+            Category
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--light-bg">Link</a>
+          </li>
+        </ul>
+        <ul class="nav__category">
+          <li class="nav__category-title">
+            Category
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--light-bg">Three word Link</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
