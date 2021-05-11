@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabular View</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    .sr-only {
+      position:absolute;
+      left:-10000px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+
+    .container {
+      max-width: 1140px;
+    }
+
+    .container--center {
+      margin: 0 auto;
+    }
+
+    .tabular-view--collapse-borders {
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+      font-family: Montserrat;
+    }
+
+    thead {
+      font-weight: 500;
+    }
+
+    tbody {
+      font-weight: 400;
+    }
+
+    tr {
+      border-bottom: 1px solid #AFAFAF;
+    }
+
+    tr th:first-of-type,
+    tr td:first-of-type {
+      padding-left: 0;
+    }
+
+    tr th:last-of-type,
+    tr td:last-of-type {
+      padding-right: 0;
+      text-align: right;
+    }
+
+    th,
+    td {
+      width: 44%;
+      padding: 24px 5px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container container--center">
+    <table aria-describedby="table-id" class="tabular-view--collapse-borders">
+      <caption id="table-id" class="sr-only">Tabular view content description</caption>
+        <col>
+        <col>
+        <col>
+
+        <thead>
+          <tr>
+            <th id="first">First column</th>
+            <th id="second">Second column</th>
+            <th id="third">Third column</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="first">Some content</td>
+            <td headers="second">01/01/1970</td>
+            <td headers="third">A</td>
+        </tr>
+        <tr>
+          <td headers="first">Some more content</td>
+          <td headers="second">22/11/1970</td>
+          <td headers="third">A</td>
+        </tr>
+        <tr>
+          <td headers="first">Another content</td>
+          <td headers="second">31/08/1970</td>
+          <td headers="third">F</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
