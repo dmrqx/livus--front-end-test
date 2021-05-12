@@ -1,8 +1,23 @@
+:root {
+  --gray-900: #1A1A1A;
+  --gray-100: #F6F6F4;
+}
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
   width: 100vw;
   height: 100vh;
+  color: var(--gray-900);
   overflow-x: hidden;
+}
+
+nav > ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
 }
