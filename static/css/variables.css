@@ -1,0 +1,23 @@
+:root {
+  /* typography */
+  --default-font-stack: 'Montserrat', system, sans-serif;
+  --font-weight--regular: 400;
+  --font-weight--medium: 500;
+  --rem-size: 10px;
+  --base-font-size: 1.6rem;
+
+  /* colors */
+  --grayscale-black: #000000;
+  --grayscale-900: #1A1A1A;
+  --grayscale-300: #AFAFAF;
+  --grayscale-100: #F6F6F4;
+  --grayscale-white: #FFFDFB;
+
+  --text-color: var(--grayscale-900);
+
+/* opacities */
+  --default-opacity: 0.4;
+
+  /* transitions */
+  --default-transition: all 0.2s ease-in-out;
+}
