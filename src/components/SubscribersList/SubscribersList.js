@@ -14,10 +14,12 @@ function SubscribersList () {
     creator: { id, subscribers = [] }
   } = useCreator()
 
-  const data = subscribers.map(({ subscription_date: subscriptionDate, ...subscriber }) => ({
-    ...subscriber,
-    subscriptionDate: formatDate(new Date(subscriptionDate))
-  }))
+  const data = subscribers.map(
+    ({ subscription_date: subscriptionDate, ...subscriber }) => ({
+      ...subscriber,
+      subscriptionDate: formatDate(new Date(subscriptionDate))
+    })
+  )
 
   const headers = [
     { id: 'subscriber-name', title: 'Assinante' },
