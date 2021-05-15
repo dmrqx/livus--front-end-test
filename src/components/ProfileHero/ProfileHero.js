@@ -5,9 +5,7 @@ import { useCreator } from '../../contexts/CreatorContext'
 import './ProfileHero.styles.css'
 
 function ProfileHero () {
-  const {
-    creator: profile
-  } = useCreator()
+  const { creator: profile } = useCreator()
 
   return (
     <>
