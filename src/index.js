@@ -3,8 +3,7 @@ import { render } from 'react-dom'
 
 import { App } from './components'
 
-import './index.css'
-
+import '../static/css/global.css'
 ;(function renderApp () {
   const bodyElement = document.body
   const appRootElement = bodyElement.querySelector('#app')
