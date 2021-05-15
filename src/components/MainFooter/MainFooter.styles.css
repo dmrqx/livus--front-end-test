@@ -1,0 +1,19 @@
+.main-footer {
+  margin-top: auto;
+  padding: 6.4rem 0;
+  background-color: var(--grayscale-100);
+}
+
+.main-footer .nav {
+  display: flex;
+}
+
+.main-footer .nav-group{
+  margin: 0 1.2rem;
+  min-width: 170px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}

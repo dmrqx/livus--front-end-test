@@ -1,0 +1,25 @@
+.main-header {
+  background-color: var(--grayscale-900);
+  color: var(--grayscale-white);
+}
+
+.main-header .nav-link {
+  margin: 0 2.4rem;
+  color: inherit;
+  font-weight: 500;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 9.6rem;
+}
+
+.main-header .nav--horizontal {
+  align-items: center;
+}
+
+.main-header .livus-logo {
+  display: flex;
+  align-items: center;
+}
