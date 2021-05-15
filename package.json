@@ -7,8 +7,9 @@
     "format": "prettier --config ./config/prettier.config.js --write './**/*.js'",
     "lint": "standardx --config ./config/eslint.config.js",
     "lint:fix": "npm run lint -- --fix",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build": "webpack --env production --config ./config/webpack.config.js",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
