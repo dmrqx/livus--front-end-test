@@ -1,0 +1,21 @@
+.profile-nav {
+  padding: 3.45rem 0;
+  border-bottom: 1px solid var(--grayscale-black);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.profile-nav nav > ul {
+  margin: 0;
+}
+
+.profile-nav .nav-link.current {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.profile-nav .nav-link {
+  margin: 0 2.4rem;
+  color: inherit;
+  opacity: 0.4;
+}
