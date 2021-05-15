@@ -1,1 +1,7 @@
 export { default as App } from './App/App'
+export { default as ClassesCatalog } from './ClassesCatalog/ClassesCatalog'
+export { default as MainFooter } from './MainFooter/MainFooter'
+export { default as MainHeader } from './MainHeader/MainHeader'
+export { default as ProfileHero } from './ProfileHero/ProfileHero'
+export { default as ProfileNav } from './ProfileNav/ProfileNav'
+export { default as SubscribersList } from './SubscribersList/SubscribersList'

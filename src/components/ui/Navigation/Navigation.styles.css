@@ -1,0 +1,39 @@
+/* Navigation */
+.nav--horizontal {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* NavGroup */
+
+.nav > .nav-group:first-of-type {
+  margin-left: 0;
+}
+
+.nav > .nav-group:last-of-type {
+  margin-right: 0;
+}
+
+.nav-group-name {
+  margin-bottom: 2.4rem;
+  font-weight: var(--font-weight--medium);
+}
+
+/* NavLink */
+
+.nav-link {
+  margin-bottom: 1.2rem;
+}
+
+.nav--horizontal .nav-link:first-of-type {
+  margin-left: 0;
+}
+
+.nav--horizontal .nav-link:last-of-type {
+  margin-right: 0;
+}
+
+.nav-group.nav-link:last-of-type {
+  margin-bottom: 0;
+}

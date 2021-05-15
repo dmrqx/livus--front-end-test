@@ -1,0 +1,50 @@
+@import url('./variables.css');
+@import url('./typography.css');
+@import url('./accessibility.css');
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: var(--grayscale-white);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav > ol,
+nav > ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.container--center {
+  margin: 0 auto;
+}
+
+.container--full-height {
+  height: 100%;
+}
+
+.page-content {
+  padding: 56px 0;
+}
+
+.page-content--crop-horizontal {
+  overflow-x: hidden;
+}
